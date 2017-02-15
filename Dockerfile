@@ -2,7 +2,7 @@ FROM ubuntu
 
 MAINTAINER Stenn Kool <stennkool@gmail.com>
 
-RUN apt-get update && apt-get -y install zsh wget postgresql-client-common unzip tar coreutils mariadb-client-core-10.0 links irssi netcat dnsutils knot-host iputils-ping net-tools mc supervisor git composer ruby rubygems-integration python python-pip vim curl php-fpm php-mcrypt php-json php-pgsql php-mysql php-curl && apt-get -y autoremove && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get -y install zsh wget postgresql-client-common unzip tar coreutils mariadb-client-core-10.0 links irssi netcat dnsutils knot-host iputils-ping net-tools mc supervisor git composer ruby rubygems-integration python python-pip python-pandas python-pymysql python-sqlalchemy httpie python-requests sqlacodegen vim curl php-fpm php-mcrypt php-json php-pgsql php-mysql php-curl php-mbstring php-gd php-xml npm nodejs nodejs-legacy && apt-get -y autoremove && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN pip install requests
 
